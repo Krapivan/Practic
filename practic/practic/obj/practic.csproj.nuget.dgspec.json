@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\practic\\practic\\practic\\practic.csproj": {}
+    "D:\\Git_Rep\\Practic\\practic\\practic\\practic.csproj": {}
   },
   "projects": {
-    "D:\\practic\\practic\\practic\\practic.csproj": {
+    "D:\\Git_Rep\\Practic\\practic\\practic\\practic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\practic\\practic\\practic\\practic.csproj",
+        "projectUniqueName": "D:\\Git_Rep\\Practic\\practic\\practic\\practic.csproj",
         "projectName": "practic",
-        "projectPath": "D:\\practic\\practic\\practic\\practic.csproj",
+        "projectPath": "D:\\Git_Rep\\Practic\\practic\\practic\\practic.csproj",
         "packagesPath": "C:\\Users\\dashc\\.nuget\\packages\\",
-        "outputPath": "D:\\practic\\practic\\practic\\obj\\",
+        "outputPath": "D:\\Git_Rep\\Practic\\practic\\practic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
