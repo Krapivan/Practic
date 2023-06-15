@@ -1,0 +1,59 @@
+@{
+    ViewData["Title"] = "Добавить пациентов";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .add-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 12px 20px;
+        }
+        
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 18px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ФИО</th>
+            <th>Номер</th>
+            <th>Адрес</th>
+            <th>Дата рождения</th>
+        </tr>
+        <!-- Здесь можно добавить дополнительные строки таблицы с данными пациентов -->
+        <tr>
+            <td>Иван Иванов</td>
+            <td>123456789</td>
+            <td>Москва</td>
+            <td>01.01.1990</td>
+        </tr>
+    </table>
+    <button class="add-button" onclick="location.href='add_patient.html'">+</button>
+    <button class="back-button" onclick="history.go(-1)">Вернуться назад</button>
+</body>
+</html>
