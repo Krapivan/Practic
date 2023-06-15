@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Панель управления";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .add-button {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 12px 20px;
+        }
+
+        .add-button-container {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Панель управления</h2>
+        <div class="button-container">
+            <button onclick="location.href='@Url.Action("Patients", "Home")'">Patients</button>
+            <button onclick="location.href='@Url.Action("Doctors", "Home")'">Doctors</button>
+            <button onclick="location.href='@Url.Action("Tickets", "Home")'">Tickets</button>
+        </div>
+    </div>
+    if(Admin = true){
+    <div class="add-button-container">
+        <button class="add-button" onclick="location.href='add.html'">+</button>
+    </div>
+    }
+</body>
+</html>
