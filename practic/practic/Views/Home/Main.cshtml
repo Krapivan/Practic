@@ -2,6 +2,10 @@
     ViewData["Title"] = "Панель управления";
     Layout = null;
 }
+@{
+
+    string role = ViewBag.role;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,6 +57,10 @@
     </style>
 </head>
 <body>
+    @if(role != "")
+    {
+        
+    
     <div class="container">
         <h2>Панель управления</h2>
         <div class="button-container">
@@ -61,10 +69,14 @@
             <button onclick="location.href='@Url.Action("Tickets", "Home")'">Tickets</button>
         </div>
     </div>
-    if(Admin = true){
+
+       if(role!="user")
+       {
     <div class="add-button-container">
         <button class="add-button" onclick="location.href='add.html'">+</button>
     </div>
+       }
+    
     }
 </body>
 </html>

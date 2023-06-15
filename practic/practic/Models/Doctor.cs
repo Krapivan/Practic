@@ -8,7 +8,6 @@ namespace RegistryProject.Models
        [Key] public string FIO { get; set; }
         public string Post { get; set; }
         public int RoomNumber { get; set; }
-        public DateOnly WorkDate { get; set; }
         public TimeOnly WorkTime { get; set; } 
 
     }

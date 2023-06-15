@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = practic
 build_property.RootNamespace = practic
-build_property.ProjectDir = D:\Git_Rep\Practic\practic\practic\
+build_property.ProjectDir = D:\Git\Practic\practic\practic\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Git_Rep\Practic\practic\practic
+build_property.MSBuildProjectDirectory = D:\Git\Practic\practic\practic
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Home/Doctors.cshtml]
+[D:/Git/Practic/practic/practic/Views/Home/Doctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb2N0b3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Home/Login.cshtml]
+[D:/Git/Practic/practic/practic/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Home/Main.cshtml]
+[D:/Git/Practic/practic/practic/Views/Home/Main.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Home/Patients.cshtml]
+[D:/Git/Practic/practic/practic/Views/Home/Patients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYXRpZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Home/Tickets.cshtml]
+[D:/Git/Practic/practic/practic/Views/Home/Tickets.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaWNrZXRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Shared/Error.cshtml]
+[D:/Git/Practic/practic/practic/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Git/Practic/practic/practic/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/_ViewImports.cshtml]
+[D:/Git/Practic/practic/practic/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/_ViewStart.cshtml]
+[D:/Git/Practic/practic/practic/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Git_Rep/Practic/practic/practic/Views/Shared/_Layout.cshtml]
+[D:/Git/Practic/practic/practic/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-96ppblczct

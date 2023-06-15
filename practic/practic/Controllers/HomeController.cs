@@ -7,7 +7,7 @@ namespace practic.Controllers
 {
     public class HomeController : Controller
     {
-        public static string _rule;
+        public static string _role = "";
        
         private ApplicationContext db;
         public HomeController(ApplicationContext context)
@@ -18,7 +18,13 @@ namespace practic.Controllers
 
         public IActionResult Login()
         {
-            return View();
+            if (_role == "")
+                return View();
+            else
+            {
+                ViewBag.role = _role;
+                return View(Main);
+            }
         }
 
         [HttpGet]
@@ -31,16 +37,18 @@ namespace practic.Controllers
                 {
                     if (admin[i].CanChangeProfiles == true && admin[i].CanChangeDoctors == true)
                     {
-                        _rule = "admin_main";
+                       
+                        _role = "admin_main";
                     }
                     else if (admin[i].CanChangeProfiles == true && admin[i].CanChangeDoctors == false)
                     {
-                        _rule = "admin_prof";
+                        _role = "admin_prof";
                     }
                     else if (admin[i].CanChangeProfiles == false && admin[i].CanChangeDoctors == true)
                     {
-                        _rule = "admin_doc";
+                        _role = "admin_doc";
                     }
+                    ViewBag.role = _role;
                     return View();
                 }
             }
@@ -50,6 +58,8 @@ namespace practic.Controllers
             {
                 if (user[i].Login == username && user[i].Password == password)
                 {
+                    _role = "user";
+                    ViewBag.role = _role;
                     return View();
                 }
             }
@@ -61,9 +71,9 @@ namespace practic.Controllers
         [HttpGet]
         public IActionResult Patients()
         {
-            List<Patient> patient = DataBaseFunctions.GetPatients(db); // Получение списка пациентов из базы данных
+            List<Patient> patient = DataBaseFunctions.GetPatients(db); 
 
-            ViewBag.Patients = patient; // Установка значения ViewBag.Patients
+            ViewBag.Patients = patient; 
 
             return View();
         }
@@ -71,9 +81,9 @@ namespace practic.Controllers
         [HttpGet]
         public IActionResult Doctors()
         {
-            List<Doctor> doctor = DataBaseFunctions.GetDoctors(db); // Получение списка пациентов из базы данных
+            List<Doctor> doctor = DataBaseFunctions.GetDoctors(db); 
 
-            ViewBag.Doctors = doctor; // Установка значения ViewBag.Patients
+            ViewBag.Doctors = doctor; 
 
             return View();
         }
@@ -81,9 +91,9 @@ namespace practic.Controllers
         [HttpGet]
         public IActionResult Tickets()
         {
-            List<Ticket> Tickets = DataBaseFunctions.GetTickets(db); // Получение списка пациентов из базы данных
+            List<Ticket> Tickets = DataBaseFunctions.GetTickets(db); 
 
-            ViewBag.Tickets = Tickets; // Установка значения ViewBag.Patients
+            ViewBag.Tickets = Tickets; 
 
             return View();
         }
