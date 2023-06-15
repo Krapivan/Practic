@@ -10,7 +10,7 @@
 </head>
 <body>
     <h2>Login</h2>
-    <form action="@Url.Action("Privacy", "Home")" method="GET">
+    <form action="@Url.Action("Patients", "Home")" method="GET">
         <div>
             <label for="username">Login:</label>
             <input type="text" id="username" name="username" required>
@@ -22,6 +22,13 @@
         <div>
             <button type="submit">Sign in</button>
         </div>
+    </form>
+
+    <form action="@Url.Action("Tickets", "Home")" method="GET">
+       
+        
+            <button type="submit">Приёмы</button>
+        
     </form>
 </body>
 </html>

@@ -8,12 +8,10 @@
 
   <ItemGroup>
     <Content Remove="Views\Home\add_patient.cshtml" />
-    <Content Remove="Views\Home\patients.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Views\Home\add_patient.cshtml" />
-    <None Include="Views\Home\patients.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

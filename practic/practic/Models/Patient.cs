@@ -10,7 +10,7 @@ namespace RegistryProject.Models
         public string Adress { get; set; }
 
         public string Phone { get; set; }
-        public DateOnly DateBirthdat { get; set; }
+        public DateOnly DateBirthday { get; set; }
 
     }
 }

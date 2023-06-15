@@ -1,14 +1,14 @@
 ﻿@{
-    ViewData["Title"] = "Пациенты";
+    ViewData["Title"] = "Приёмы";
     Layout = null;
 }
 @{
-    var patients = ViewBag.Patients;
+    var tickets = ViewBag.Tickets;
 }
 <!DOCTYPE html>
 <html>
 <head>
-
+    <title>Ticket</title>
     <style>
         table {
             width: 100%;
@@ -40,29 +40,23 @@
     </style>
 </head>
 <body>
-   
     <table>
-        <thead>
-            <tr>
-                <th>ФИО</th>
-                <th>Адресс</th>
-                <th>Телефон</th>
-                <th>Дата рождения</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var patient in patients)
+        <tr>
+            <th>ФИО Пациента</th>
+            <th>Врач</th>
+            <th>Дата и Время</th>
+        </tr>
+     
+         @foreach (var ticket in tickets)
             {
                 <tr>
-                    <td>@patient.FIO</td>
-                    <td>@patient.Adress</td>
-                    <td>@patient.Phone</td>
-                    <td>@patient.DateBirthday</td>
+                    <td>@ticket.PatientFIO</td>
+                    <td>@ticket.DoctorFIO</td>
+                    <td>@ticket.DateTimeTicket</td>
                 </tr>
             }
-        </tbody>
     </table>
-    <button class="add-button" onclick="location.href='add_patient.html'">+</button>
+    <button class="add-button" onclick="location.href='add_ticket.html'">+</button>
     <button class="back-button" onclick="history.go(-1)">Вернуться назад</button>
 </body>
 </html>

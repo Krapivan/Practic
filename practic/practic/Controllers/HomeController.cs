@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using practic.Models;
 using RegistryProject.Models;
 
 
@@ -20,15 +21,23 @@ namespace practic.Controllers
         }
 
         [HttpGet]
-        public IActionResult Privacy(string username, string password)
+        public IActionResult Patients(string username, string password)
         {
-            var a = db.Admins.ToList();
-            ViewBag.username = a[0].Login;
-            
-            
+            List<Patient> patients = DataBaseFunctions.GetPatients(db); // Получение списка пациентов из базы данных
+
+            ViewBag.Patients = patients; // Установка значения ViewBag.Patients
+
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Tickets()
+        {
+            List<Ticket> Tickets = DataBaseFunctions.GetTickets(db); // Получение списка пациентов из базы данных
+
+            ViewBag.Tickets = Tickets; // Установка значения ViewBag.Patients
+
             return View();
         }
 
-      
     }
 }
